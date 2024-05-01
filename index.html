@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Page White Div with Icon (Responsive)</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Lexend', sans-serif; /* Apply Lexend font family to the whole document */
+    }
+    .white-div {
+    width: 100%;
+    min-height: calc(160vh + 160px); /* Increase the minimum height */
+    background-color: white;
+    
+  
+}
+.icon {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 7%;
+    max-width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        width: 15%; /* Increase the width for smaller screens */
+        max-width: none; /* Remove the max-width restriction */
+    }
+}
+
+
+
+
+
+    .text {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 4vw; /* Responsive font size */
+        line-height: 1.2;
+    }
+    .description {
+        position: absolute;
+        top: 60%; /* Move the description text downwards by default */
+        left: 5%;
+        width: 90%; /* Adjust width */
+        font-size: 2.5vw; /* Responsive font size */
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .about-text {
+        position: absolute;
+        top: 8%;
+        right: 10%; /* Adjusted right position */
+        font-size: 2.5vw; /* Responsive font size */
+        line-height: 1.5;
+        margin-left: 5%; /* Added left margin */
+        margin-right: 25%; /* Added right margin */
+    }
+    .contact-text {
+        position: absolute;
+        top: 8%;
+        right: 10%; /* Adjusted right position */
+        font-size: 2.5vw; /* Responsive font size */
+        line-height: 1.5;
+        margin-left: 5%; /* Added left margin */
+        margin-right: 10%; /* Added right margin */
+    }
+    .bottom-img {
+    position: absolute;
+    left: 13%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    top: calc(100% + 50vh); /* Adjust the position below the description part */
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-img {
+        top: calc(26% + 36vh); /* Adjust the position for smaller screens */
+        max-width: 30%; /* Adjust the maximum width for smaller screens */
+        left: 17%;;
+    }
+}
+
+
+
+
+
+    .navy-div {
+        width: 100%;
+        height: 500px; /* Set the height of the navy div */
+        background-color: navy;
+        top: 50%;
+    }
+  
+
+
+
+
+    @media screen and (max-width: 768px) {
+        .text {
+            top: 20%; /* Move the welcome text upwards for smaller screens */
+        }
+        .description {
+            top: 65%; /* Move the description text downwards for smaller screens */
+            transform: translateY(5%);
+        }
+        
+      
+        .description {
+            top: 27%; /* Move the description text downwards for smaller screens */
+            transform: translateY(10%);
+        }
+    }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap"> <!-- Load Lexend font with different weights -->
+</head>
+<body>
+<div class="white-div">
+    <img class="icon" src="logo.png" alt="Icon">
+    <div class="text">
+        <span style="font-weight: 400;">WELCOME TO</span><br> <span style="font-weight: 600;">SOCIOSIP</span>
+    </div>
+    <div class="description">
+        Your one-stop shop for all things <br>
+        brand and digital! We don't just<br>
+        sip the tea; we stir the social<br>
+        conversation. From crafting <br>
+        captivating brand experiences to <br>
+        managing your online presence,<br>
+        we're here to help your brand<br>
+        reach new heights. Explore our <br>
+        comprehensive services below<br>
+        and let's start brewing <br>
+        something remarkable together.
+    </div>
+    <span class="about-text">About</span>
+    <span class="contact-text">Contact</span>
+    <img class="bottom-img" src="button.png" alt="Bottom Image">
+</div>
+<div class="navy-div"></div>
+</body>
+</html>
