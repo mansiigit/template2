@@ -95,7 +95,6 @@
     text-align: left;
     position: absolute;
     top: 2120px; /* Adjusted to move the white-info div upwards */
-    left: 90px;
     width: 100%;
     z-index: 2; /* Ensure white div is above blue div */
 }
@@ -108,9 +107,9 @@
 
 
 .blue-div {
-    width: 100%; /* Set width to 100% */
+    width: 100vw; /* Set width to 100% of the viewport width */
     height: 850px;
-    background-color: rgb(32, 32, 62);
+    background-color:rgb(25, 31, 75);
     position: relative; /* Change position to relative */
     z-index: 1; /* Ensure blue-div is below white div */
     top: 1240px; /* Adjust the top position to move the blue div down */
@@ -142,7 +141,7 @@
     content: "to empower your brand and amplify your reach";
     font-size: 1.2rem; /* Font size for larger screens */
     top: 87px; /* Adjusted top position to move the text down */
-    color:  rgb(178, 72, 72);
+    color:  rgb(189, 96, 96);
 }
 
 @media screen and (max-width: 768px) {
@@ -156,7 +155,7 @@
     }
 }
 .blue-div {
-    background-color: rgb(43, 50, 107);
+    background-color:rgb(25, 31, 75);
     padding: 10px;
     width: 100%; /* Adjust the width as needed */
     margin: 0 auto; /* Center horizontally */
@@ -170,7 +169,7 @@
 }
 
 .box {
-    background-color:rgb(43, 50, 107);
+    background-color:rgb(25, 31, 75);
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -188,11 +187,12 @@
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
+
     }
 }
 
 .box h3 {
-    color: rgb(178, 72, 72);/* Make heading white */
+    color:#f05670;/*/* Make heading white */
     margin-bottom: 10px; /* Add margin bottom */
     border-bottom: 2px solid white; /* Add white border bottom */
     padding-bottom: 5px; /* Add padding bottom for space between text and line */
@@ -210,15 +210,122 @@
 .white-info p img {
     width: 16px; /* Adjust the width of the icons */
     height: auto; /* Maintain aspect ratio */
+    
 }
 .white-info h2 {
     font-size: 2rem; /* Adjust the font size as desired */
-    color:rgb(43, 50, 107); /* Set the text color to blue */
+    color:rgb(23, 29, 74); /* Set the text color to blue */
 }
 
 
 .white-info p1 {
-    color: rgb(178, 72, 72);/* Set the text color to red */
+    color:#f05670;/* Set the text color to red */
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, calc(33.33% - 10px)); /* Adjust width of columns and reduce gap */
+        gap: 5px; /* Reduce the gap between grid items */
+        margin-top: 170px;
+    }
+
+    .box {
+        padding: 10px; /* Updated padding for each box */
+        text-align: center; /* Center-align text */
+        margin: -20px 5px -20px; /* Reduce top margin for boxes */
+    }
+
+    .box img {
+        max-width: 90%; /* Adjusted max-width for the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add margin bottom for spacing */
+    }
+
+    .box h3 {
+        font-size: 0.8rem; /* Further reduce font size for headings */
+        margin-bottom: 5px; /* Adjust margin bottom for headings */
+    }
+
+    .box p {
+        font-size: 0.6rem; /* Further reduce font size for paragraphs */
+        margin-bottom: 5px; /* Adjust margin bottom for paragraphs */
+    }
+
+    .container {
+        position: relative; /* Ensure positioning context */
+        top: -20px; /* Adjust the top position upwards */
+    }
+
+    .box {
+        margin-bottom: 10px; /* Further reduce margin between boxes for smaller screens */
+    }
+
+    /* Adjust icon size */
+    .white-info p img {
+        width: 24px; /* Increase the width of the icons */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .white-info {
+        padding: 1px 10px; /* Reduce padding to move content up */
+        margin-top: -60px; /* Move the content further upwards */
+    }
+
+    .white-info h2 {
+        font-size: 1.5rem; /* Reduce the font size for the heading */
+        margin-bottom: 5px; /* Add margin bottom to the heading */
+        margin-top: 0; /* Remove top margin */
+        margin-left: 10px; /* Add left margin */
+    }
+
+    .white-info p1 {
+        font-size: 0.8rem; /* Reduce the font size for the paragraph */
+        margin-bottom: 3px; /* Add margin bottom to the paragraph */
+        margin-top: 0; /* Remove top margin */
+        margin-left: 10px; /* Add left margin */
+    }
+
+    .white-info p {
+        font-size: 0.8rem; /* Reduce the font size for the paragraph */
+        margin-bottom: 3px; /* Add margin bottom to the paragraph */
+        margin-top: 0; /* Remove top margin */
+        margin-left: 10px; /* Add left margin */
+    }
+    .white-info img {
+        width: 4px; /* Reduce the width of the icons */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 5px; /* Add margin right to the icons */
+    }
+}
+
+.white-info p.p1 {
+    font-size: 1.7rem; /* Adjust the font size as needed */
+}
+@media screen and (max-width: 768px) {
+    .white-info p.p1 {
+        font-size: 1.3rem; /* Adjust the font size for smaller screens */
+    }
+}
+
+
+
+
+.white-info h2,
+.white-info p,
+.white-info p1,
+.white-info img {
+    margin-left: 10px; /* Add left margin to all elements inside .white-info */
+}
+.white-info h2 {
+    color:rgb(23, 29, 74); /* Change the color of the h2 element to blue */
+}
+
+
+.white-info .p1 {
+    color: #f05670; /* Change the color of the p element with class p1 to red */
 }
 
 </style>
@@ -304,7 +411,8 @@
     </div>
     <div class="white-info">
         <h2>READY TO SIP ON SUCCESS?</h2>
-        <p1>We accept telepathy but a text would work better. Contact us now!</p1>
+        <p class="p1">We accept telepathy but a text would work better. Contact us now!</p>
+
         <p><img src="phone-call.png" alt="Phone Icon"> +65 83000562 / +91 9769652708</p>
         <p><img src="email.png" alt="Email Icon"> abdulhuseinjaibir@sociosip.com / lamiya@sociosip.com</p>
         <p><img src="pin.png" alt="Address Icon"> Alexandra Rd, Singapore 159958</p>
