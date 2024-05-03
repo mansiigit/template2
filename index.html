@@ -136,9 +136,23 @@
     font-weight: bold;
     top: 15px; /* Adjust the top position to move it closer to the top */
 }
+@media screen and (max-width: 768px) {
+    .blue-div::before {
+        font-size: 1.7rem; /* Adjusted font size for smaller screens */
+        top: 10px; /* Adjust the top position if needed */
+    }
+}
+@media screen and (max-width: 768px) {
+    .blue-div::after {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+        top: 70px; /* Adjusted top position for smaller screens */
+    }
+}
+
+
 
 .blue-div::after {
-    content: "to empower your brand and amplify your reach";
+    content: "To empower your brand and amplify your reach";
     font-size: 1.2rem; /* Font size for larger screens */
     top: 87px; /* Adjusted top position to move the text down */
     color:  rgb(189, 96, 96);
@@ -222,29 +236,36 @@
     color:#f05670;/* Set the text color to red */
 }
 @media screen and (max-width: 768px) {
+    .blue-div {
+        top: 500px; /* Adjust this value to move the blue div downwards on smaller screens */
+    }
+
+    .container {
+        margin-top: 40%; /* Adjust this value to move the container upwards on smaller screens */
+    }
     .container {
         grid-template-columns: repeat(3, calc(33.33% - 10px)); /* Adjust width of columns and reduce gap */
         gap: 5px; /* Reduce the gap between grid items */
-        margin-top: 170px;
+       
+    }
+    .container {
+       
+        gap: 5px; /* Reduce the gap between grid items */
+        margin-top: 40%; /* Adjust the top margin of the container */
     }
 
     .box {
         padding: 10px; /* Updated padding for each box */
         text-align: center; /* Center-align text */
-        margin: -20px 5px -20px; /* Reduce top margin for boxes */
+        margin: -10px 2px -10px; /* Reduce top margin for boxes */
     }
 
-    .box img {
-        max-width: 90%; /* Adjusted max-width for the image */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 10px; /* Add margin bottom for spacing */
-    }
-
+   
     .box h3 {
-        font-size: 0.8rem; /* Further reduce font size for headings */
-        margin-bottom: 5px; /* Adjust margin bottom for headings */
+        font-size: 0.6rem; /* Adjust font size for smaller screens */
     }
 
+   
     .box p {
         font-size: 0.6rem; /* Further reduce font size for paragraphs */
         margin-bottom: 5px; /* Adjust margin bottom for paragraphs */
@@ -259,75 +280,78 @@
         margin-bottom: 10px; /* Further reduce margin between boxes for smaller screens */
     }
 
-    /* Adjust icon size */
-    .white-info p img {
-        width: 24px; /* Increase the width of the icons */
-        height: auto; /* Maintain aspect ratio */
-    }
+    
 }
-
-
-
-@media screen and (max-width: 768px) {
-    .white-info {
-        padding: 1px 10px; /* Reduce padding to move content up */
-        margin-top: -60px; /* Move the content further upwards */
-    }
-
-    .white-info h2 {
-        font-size: 1.5rem; /* Reduce the font size for the heading */
-        margin-bottom: 5px; /* Add margin bottom to the heading */
-        margin-top: 0; /* Remove top margin */
-        margin-left: 10px; /* Add left margin */
-    }
-
-    .white-info p1 {
-        font-size: 0.8rem; /* Reduce the font size for the paragraph */
-        margin-bottom: 3px; /* Add margin bottom to the paragraph */
-        margin-top: 0; /* Remove top margin */
-        margin-left: 10px; /* Add left margin */
-    }
-
-    .white-info p {
-        font-size: 0.8rem; /* Reduce the font size for the paragraph */
-        margin-bottom: 3px; /* Add margin bottom to the paragraph */
-        margin-top: 0; /* Remove top margin */
-        margin-left: 10px; /* Add left margin */
-    }
-    .white-info img {
-        width: 4px; /* Reduce the width of the icons */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 5px; /* Add margin right to the icons */
-    }
-}
-
-.white-info p.p1 {
-    font-size: 1.7rem; /* Adjust the font size as needed */
-}
-@media screen and (max-width: 768px) {
-    .white-info p.p1 {
-        font-size: 1.3rem; /* Adjust the font size for smaller screens */
-    }
-}
-
-
-
-
 .white-info h2,
 .white-info p,
 .white-info p1,
 .white-info img {
-    margin-left: 10px; /* Add left margin to all elements inside .white-info */
+    margin-left: 17px; /* Add left margin to all elements inside .white-info */
 }
-.white-info h2 {
-    color:rgb(23, 29, 74); /* Change the color of the h2 element to blue */
+
+@media screen and (max-width: 768px) {
+    .box img {
+        width: 50%; /* Adjust the width of the image */
+        max-height: auto; /* Maintain aspect ratio */
+        margin-bottom: 5px; /* Reduce the margin bottom for spacing */
+    }
 }
+
+
+
+
+
+
 
 
 .white-info .p1 {
     color: #f05670; /* Change the color of the p element with class p1 to red */
 }
+@media screen and (max-width: 768px) {
+        .responsive-image {
+            max-width: 50%; /* Adjust the maximum width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: -5%; /* Adjust the top margin */
+            margin-left: -5%; /* Adjust the left margin */
+        }
+        
+    }
 
+    @media screen and (max-width: 768px) {
+    .white-info {
+        padding: 10px; /* Adjust padding */
+        margin-top: -450px; /* Move the content further upwards */
+        margin-left: -20px; /* Move the content to the left */
+    }
+
+    h2 {
+        font-size: 15px !important; /* Ensure the font size is applied */
+        margin-top: -15px !important; /* Ensure the margin top is applied */
+    }
+
+    .p1 {
+        margin-top: -6px; /* Adjust the margin to move the paragraph upwards */
+        font-size: 12px;
+    }
+
+    .white-info p {
+        font-size: 10px; /* Adjust the font size for smaller screens */
+        margin-top: -4px; /* Move the paragraphs upwards */
+    }
+    .white-info h2,
+.white-info p,
+.white-info p1,
+.white-info img {
+    margin-left: 13px; /* Add left margin to all elements inside .white-info */
+}
+}
+
+
+
+
+
+
+    
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap"> <!-- Load Lexend font with different weights -->
 </head>
@@ -351,8 +375,9 @@
             something remarkable together.
             <br>
             <a href="https://www.sociosip.com">
-                <img src="get started.svg" alt="Additional Image" style="width: 300px; height: auto; margin-top: -90px; margin-left: -80px;">
+                <img src="get started.svg" alt="Additional Image" class="responsive-image">
             </a>
+            
             
         </div>
         <div class="img">
