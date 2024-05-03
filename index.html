@@ -9,113 +9,111 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Lexend', sans-serif; /* Apply Lexend font family to the whole document */
+    font-family: 'Lexend', sans-serif; /
 }
 
 .white-div {
     width: 100%;
-    min-height: calc(40vh + 40px); /* Increase the minimum height */
+    min-height: calc(40vh + 40px); 
     background-color: white;
+}
+@media screen and (max-width: 289px) {
+    .white-div {
+        width: 100%; 
+    }
 }
 
 .icon {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 7%;
-    max-width: 100px;
-    height: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .icon {
-        width: 15%; /* Increase the width for smaller screens */
-        max-width: none; /* Remove the max-width restriction */
-    }
+    margin-left: 50px;
+    margin-top:  30px;
+    left: 5px;
+    width: 100px;
+    
+ 
 }
 
 .text {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    font-size: 4vw; /* Responsive font size */
+
+    margin-top: 100px;
+    margin-left: 70px;
+    font-size:50px;
     line-height: 1.2;
+   
+}
+@media screen and (max-width: 319px) {
+    .text {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 405px) {
+    .text {
+        white-space: nowrap;
+    }
 }
 
 .description {
+    font-family: 'Lexend', sans-serif;
     position: absolute;
-    top: 60%; /* Move the description text downwards by default */
-    left: 5%;
-    width: 90%; /* Adjust width */
-    font-size: 2.5vw; /* Responsive font size */
+    margin-top: 60px;
+    margin-left: 70px;
+    font-size: 30px;
     line-height: 1.5;
     text-align: justify;
 }
-
-@media screen and (max-width: 768px) {
-    .text {
-        top: 20%; /* Move the welcome text upwards for smaller screens */
-    }
-    .description {
-        top: 55%; /* Adjust the top position for smaller screens */
-        transform: translateY(-50%); /* Center the description vertically */
+@media screen and (max-width: 553px) {
+    .description{
+        white-space: nowrap;
     }
 }
-
-.img {
-    position: absolute;
-    top: 103%;
-    left: 40%; /* Adjusted the right position */
-    transform: translateY(-50%);
-}
-
-@media screen and (max-width: 768px) {
-    .img {
-        top: 45%;
-        left:40%; /* Adjusted the right position for small screens */
-        transform: translateY(-50%);
-    }
-}
-
 .img img {
-    max-width: 100%; /* Adjust the maximum width of the image for big screens */
-    height: auto; /* Let the height adjust automatically */
+ 
+    height: 900px;
+    margin-left: 440px;
+    margin-top: -100px;
+  
+   
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 328px) {
+    .img img{
+    height:850px ;
+    }
+  
+}
+@media screen and (max-width: 289px) {
     .img img {
-        max-width: 90%; /* Adjust the maximum width of the image for small screens */
-        height: auto; /* Let the height adjust automatically */
+        margin-right: 0; 
     }
 }
-
-.white-info {
-    background-color: white;
-    padding: 10px 0;
-    text-align: left;
-    position: absolute;
-    top: 2120px; /* Adjusted to move the white-info div upwards */
-    width: 100%;
-    z-index: 2; /* Ensure white div is above blue div */
+.responsive-image {
+    width: 400px; 
+    height: auto;
+    margin-top: -100px;
+    margin-left: -92px;
 }
-
-@media screen and (max-width: 768px) {
-    .white-info {
-        top: 1500px; /* Adjusted to move the white-info div further upwards on small screens */
-    }
-}
-
 
 .blue-div {
-    width: 100vw; /* Set width to 100% of the viewport width */
-    height: 850px;
-    background-color:rgb(25, 31, 75);
-    position: relative; /* Change position to relative */
-    z-index: 1; /* Ensure blue-div is below white div */
-    top: 1240px; /* Adjust the top position to move the blue div down */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
+    width: 100%; 
+   
+    background-color: rgb(25, 31, 75);
+    position: relative;
+    z-index: 1; 
+    top: 0; 
+    margin: 0; 
+    padding: 0; 
 }
+
+
+@media screen and (max-width: 356px) {
+    .blue-div{
+        width: 100vw; 
+    }
+}
+@media screen and (max-width: 328px) {
+    .blue-div {
+        margin-top: 470px; 
+    }
+}
+
 
 
 
@@ -123,229 +121,130 @@
 .blue-div::after {
     content: "";
     position: absolute;
-    color: white; /* Change text color */
+    color: white;
     text-align: center;
-    width: 100%; /* Make sure it spans the full width */
-    left: 50%; /* Move to the center horizontally */
-    transform: translateX(-50%); /* Move back by half of its own width */
+    width: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .blue-div::before {
     content: "SERVICES & BENEFITS";
-    font-size: 3rem; /* Increased font size for big screens */
+    font-size: 3rem;
     font-weight: bold;
-    top: 15px; /* Adjust the top position to move it closer to the top */
+    top: 15px; 
 }
-@media screen and (max-width: 768px) {
-    .blue-div::before {
-        font-size: 1.7rem; /* Adjusted font size for smaller screens */
-        top: 10px; /* Adjust the top position if needed */
-    }
-}
-@media screen and (max-width: 768px) {
-    .blue-div::after {
-        font-size: 1rem; /* Smaller font size for smaller screens */
-        top: 70px; /* Adjusted top position for smaller screens */
-    }
-}
-
-
 
 .blue-div::after {
     content: "To empower your brand and amplify your reach";
-    font-size: 1.2rem; /* Font size for larger screens */
-    top: 87px; /* Adjusted top position to move the text down */
+    font-size: 1.4rem; 
+    top: 87px; 
     color:  rgb(189, 96, 96);
 }
 
-@media screen and (max-width: 768px) {
-    .blue-div::after {
-        font-size: 1rem; /* Smaller font size for smaller screens */
-        top: 70px; /* Adjusted top position for smaller screens */
-    }
-    .blue-div {
-        height: 500px; /* Adjust height for smaller screens */
-        top: 900px; /* Move it further upwards on small screens */
-    }
-}
-.blue-div {
-    background-color:rgb(25, 31, 75);
-    padding: 10px;
-    width: 100%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center horizontally */
-}
 
+.blue-div {
+    background-color:#1e184d;
+  
+    width: 1430px; 
+    margin: 0 auto; 
+}
 .container {
-    margin-top: 120px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap:5px;
 }
 
 .box {
-    background-color:rgb(25, 31, 75);
+    background-color:#1e184d;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
+
 .box img {
-    width: 30%; /* Reduce width by 50% */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline spacing */
-    margin-bottom: -5px; /* Add space below the image */
+    width: 40%; 
+    height: 60%; 
+    display: block; 
+    margin-bottom: -5px;
 }
 
 
 .box h3 {
-    color:#f05670;/*/* Make heading white */
-    margin-bottom: 10px; /* Add margin bottom */
-    border-bottom: 2px solid white; /* Add white border bottom */
-    padding-bottom: 5px; /* Add padding bottom for space between text and line */
+    color: #f05670; 
+    margin-bottom: 10px; 
+    display: inline-block; 
+}
+
+.box h3::after {
+    content: ""; 
+    display: block; 
+    width: 30%;
+    border-bottom: 2px solid white; 
+    margin: 2px auto; 
 }
 
 
 .box p {
-    color: white; /* Make paragraph white */
-    font-size: 1.2rem; /* Increase font size */
-    white-space: pre-wrap; /* Allow wrapping */
-    margin-bottom: 10px; /* Add margin bottom */
-    text-align: center; /* Center-align text */
+    color: white; 
+    font-size: 1.2rem;
+    white-space: pre-wrap; 
+    margin-bottom: 12px; 
+    text-align: center;
+}
+.white-info {
+    background-color: white;
+    padding: 30px 10px; 
+    text-align: left;
+    position: absolute;
+    top: 2120px;
+    width: 100%;
+    z-index: 2; 
+}
+
+.white-info p {
+    font-size: 1.5rem; 
 }
 
 .white-info p img {
-    width: 16px; /* Adjust the width of the icons */
-    height: auto; /* Maintain aspect ratio */
-    
+    width: 18px; 
+    height: auto; 
 }
+
 .white-info h2 {
-    font-size: 2rem; /* Adjust the font size as desired */
-    color:rgb(23, 29, 74); /* Set the text color to blue */
+    font-size: 3rem;
+    color:#1e184d; 
 }
-
-
-.white-info p1 {
-    color:#f05670;/* Set the text color to red */
-}
-@media screen and (max-width: 768px) {
-    .blue-div {
-        top: 500px; /* Adjust this value to move the blue div downwards on smaller screens */
-    }
-
-  .container{
-    margin-top: 28%;
-  }
-    .container {
-        grid-template-columns: repeat(3, calc(33.33% - 10px)); /* Adjust width of columns and reduce gap */
-        gap: 5px; /* Reduce the gap between grid items */
-       
-    }
-    .container {
-       
-        gap: 5px; /* Reduce the gap between grid items */
-     /* Adjust the top margin of the container */
-    }
-
-    .box {
-        padding: 10px; /* Updated padding for each box */
-        text-align: center; /* Center-align text */
-        margin: -10px 2px -10px; /* Reduce top margin for boxes */
-    }
-
-   
-    .box h3 {
-        font-size: 0.6rem; /* Adjust font size for smaller screens */
-    }
-
-   
-    .box p {
-        font-size: 0.6rem; /* Further reduce font size for paragraphs */
-        margin-bottom: 5px; /* Adjust margin bottom for paragraphs */
-    }
-
-    .container {
-        position: relative; /* Ensure positioning context */
-        top: -20px; /* Adjust the top position upwards */
-    }
-
-    .box {
-        margin-bottom: 10px; /* Further reduce margin between boxes for smaller screens */
-    }
-
-    
-}
-.white-info h2,
-.white-info p,
-.white-info p1,
-.white-info img {
-    margin-left: 17px; /* Add left margin to all elements inside .white-info */
-}
-
-@media screen and (max-width: 768px) {
-    .box img {
-        width: 50%; /* Adjust the width of the image */
-        max-height: auto; /* Maintain aspect ratio */
-        margin-bottom: 5px; /* Reduce the margin bottom for spacing */
-    }
-}
-
-
-
-
-
 
 
 
 .white-info .p1 {
-    color: #f05670; /* Change the color of the p element with class p1 to red */
+    color: #f05670; 
+    font: 2.2rem sans-serif;
+    font-family: 'Lexend Bold', sans-serif;
 }
-@media screen and (max-width: 768px) {
-        .responsive-image {
-            max-width: 50%; /* Adjust the maximum width of the image */
-            height: auto; /* Maintain aspect ratio */
-            margin-top: -5%; /* Adjust the top margin */
-            margin-left: -5%; /* Adjust the left margin */
-        }
-        
-    }
 
-    @media screen and (max-width: 768px) {
-    .white-info {
-        padding: 10px; /* Adjust padding */
-        margin-top: -450px; /* Move the content further upwards */
-        margin-left: -20px; /* Move the content to the left */
-    }
+.white-info h2,
+.white-info p,
+.white-info p1,
+.white-info img {
+    margin-left: 17px; 
+    font-family: 'Lexend', sans-serif;
+}
 
-    h2 {
-        font-size: 15px !important; /* Ensure the font size is applied */
-        margin-top: -15px !important; /* Ensure the margin top is applied */
-    }
-
-    .p1 {
-        margin-top: -6px; /* Adjust the margin to move the paragraph upwards */
-        font-size: 12px;
-    }
-
-    .white-info p {
-        font-size: 10px; /* Adjust the font size for smaller screens */
-        margin-top: -4px; /* Move the paragraphs upwards */
-    }
+@media screen and (max-width:717px) {
     .white-info h2,
 .white-info p,
 .white-info p1,
 .white-info img {
-    margin-left: 13px; /* Add left margin to all elements inside .white-info */
-}
-}
-
-
-
-
-
-
     
+white-space: nowrap;
+}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap"> <!-- Load Lexend font with different weights -->
 </head>
@@ -353,8 +252,10 @@
     <div class="white-div">
         <img class="icon" src="logo.png" alt="Icon">
         <div class="text">
-            <span style="font-weight: 400;">WELCOME TO</span><br> <span style="font-weight: 600;">SOCIOSIP !</span>
-        </div>
+    <span>WELCOME TO</span><br> 
+    <span style="font-family: 'Lexend', sans-serif; font-weight: bold;">SOCIOSIP !</span>
+</div>
+
         <div class="description">
             Your one-stop shop for all things <br>
             brand and digital! We don't just<br>
@@ -369,11 +270,10 @@
             something remarkable together.
             <br>
             <a href="https://www.sociosip.com">
-                <img src="get started.svg" alt="Additional Image" class="responsive-image">
+                <img src="get started.png" alt="Additional Image" class="responsive-image">
             </a>
-            
-            
         </div>
+        
         <div class="img">
             <img src="marketing element.svg" alt="Additional Image">
         </div>
@@ -419,14 +319,7 @@
    
 </div>
 
-        
-        
-        
-        
-        
-        
-        
-        
+  
     </div>
     <div class="white-info">
         <h2>READY TO SIP ON SUCCESS?</h2>
