@@ -16,6 +16,7 @@
     width: 100%;
     min-height: calc(40vh + 40px); 
     background-color: white;
+   
 }
 @media screen and (max-width: 289px) {
     .white-div {
@@ -25,7 +26,7 @@
 
 .icon {
     margin-left: 50px;
-    margin-top:  30px;
+    margin-top:  50px;
     left: 5px;
     width: 100px;
     
@@ -36,8 +37,8 @@
 
     margin-top: 100px;
     margin-left: 70px;
-    font-size:50px;
-    line-height: 1.2;
+    font-size:55px;
+    line-height: 1.3;
    
 }
 @media screen and (max-width: 319px) {
@@ -45,7 +46,12 @@
         white-space: nowrap;
     }
 }
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 406px) {
+    .text {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 441px) {
     .text {
         white-space: nowrap;
     }
@@ -54,9 +60,9 @@
 .description {
     font-family: 'Lexend', sans-serif;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 70px;
-    font-size: 30px;
+    font-size: 37px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -65,11 +71,16 @@
         white-space: nowrap;
     }
 }
+@media screen and (max-width: 666px) {
+    .description{
+        white-space: nowrap;
+    }
+}
 .img img {
  
-    height: 900px;
-    margin-left: 440px;
-    margin-top: -100px;
+    height: 780px;
+    margin-left: 680px;
+    margin-top: -60px;
   
    
 }
@@ -85,118 +96,130 @@
     }
 }
 .responsive-image {
-    width: 400px; 
+    width: 450px; 
     height: auto;
-    margin-top: -100px;
-    margin-left: -92px;
-}
-
+    margin-top: -160px;
+    margin-left: -120px;
+} 
 .blue-div {
-    width: 100%; 
-   
-    background-color: rgb(25, 31, 75);
+    width: 1450px; 
+    height: 1100px; 
+    background-color: #1e184d;
     position: relative;
-    z-index: 1; 
-    top: 0; 
     margin: 0; 
     padding: 0; 
-}
-
-
-@media screen and (max-width: 356px) {
-    .blue-div{
-        width: 100vw; 
-    }
-}
-@media screen and (max-width: 328px) {
-    .blue-div {
-        margin-top: 470px; 
-    }
-}
-
-
-
-
-.blue-div::before,
-.blue-div::after {
-    content: "";
-    position: absolute;
-    color: white;
-    text-align: center;
-    width: 100%; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
 }
 
 .blue-div::before {
     content: "SERVICES & BENEFITS";
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
-    top: 15px; 
+    position: absolute;
+    top: 60px; 
+    color: white;
 }
 
 .blue-div::after {
     content: "To empower your brand and amplify your reach";
-    font-size: 1.4rem; 
-    top: 87px; 
-    color:  rgb(189, 96, 96);
+    font-size: 1.6rem; /* Adjust the font size for the second line */
+    color: rgb(168, 118, 118);
+    position: absolute;
+    white-space: nowrap;
+    top: 160px; /* Adjust the top position of the second line */
+    left: 50%; /* Position the second line in the center horizontally */
+    transform: translateX(-50%);
 }
 
-
-.blue-div {
-    background-color:#1e184d;
-  
-    width: 1430px; 
-    margin: 0 auto; 
+@media screen and (max-width: 441px) {
+    .blue-div::before{
+font-size:4.5rem;
+margin-top: 10px;
+    }
+    .blue-div::after{
+font-size: 2rem;
 }
+}
+
 .container {
-    margin-top: 50px;
+    margin-top: 170px; /* Adjust the margin-top value to move the container downwards */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:5px;
+    gap: 10px; /* Adjust the gap between grid items */
+    padding: -20px;
 }
 
+/* Styles for the first three boxes */
 .box {
-    background-color:#1e184d;
-    padding: 50px;
+    background-color: #1e184d;
+    padding: 30px; /* Reduce the padding to bring content closer */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 90px; /* Reduce the margin to bring boxes closer vertically */
+    width: 350px; /* Increase the width of the box */
+    height: 350px; /* Increase the height of the box */
 }
-
 
 .box img {
     width: 40%; 
-    height: 60%; 
+    height: 33%; 
     display: block; 
     margin-bottom: -5px;
 }
 
-
 .box h3 {
     color: #f05670; 
-    margin-bottom: 10px; 
+    margin-bottom: 3px; /* Adjusted margin-bottom value */
     display: inline-block; 
+    font-size: 1.4rem;
+    white-space: nowrap;
 }
 
 .box h3::after {
     content: ""; 
     display: block; 
-    width: 30%;
+    width: 70px; /* Set a fixed width for the line */
     border-bottom: 2px solid white; 
-    margin: 2px auto; 
+    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
 }
-
 
 .box p {
     color: white; 
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    line-height: 1.5; /* Adjusted line height */
     white-space: pre-wrap; 
-    margin-bottom: 12px; 
+    margin-top: 15px; /* Adjusted margin value */
     text-align: center;
 }
+
+/* Additional styles for the last three boxes */
+.box:nth-last-child(-n+3) {
+    margin-top: 10px; /* Reduce the margin to bring the last three boxes closer vertically */
+}
+
+.box:nth-last-child(-n+3) h3::after {
+    content: ""; 
+    display: block; 
+    width: 70px; /* Set a fixed width for the line */
+    border-bottom: 2px solid white; 
+    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
+}
+
+.box:nth-last-child(-n+3) p {
+    color: white; 
+    font-size: 1.8rem;
+    line-height: 1.5; /* Adjusted line height */
+    white-space: pre-wrap; 
+    margin-top: 15px; /* Adjusted margin value */
+    text-align: center;
+}
+
+
+
 .white-info {
     background-color: white;
     padding: 30px 10px; 
@@ -237,14 +260,8 @@
     font-family: 'Lexend', sans-serif;
 }
 
-@media screen and (max-width:717px) {
-    .white-info h2,
-.white-info p,
-.white-info p1,
-.white-info img {
-    
-white-space: nowrap;
-}
+
+
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap"> <!-- Load Lexend font with different weights -->
 </head>
@@ -275,60 +292,68 @@ white-space: nowrap;
         </div>
         
         <div class="img">
-            <img src="marketing element.svg" alt="Additional Image">
+            <img src="marketing element-cropped.svg" alt="Additional Image">
         </div>
-      <div class="blue-div">
-        <div class="container">
-            <div class="box">
-                <img src="brand.png"alt="1">
-                <h3>BRANDING</h3>
-                <p>Design that communicate the brand's story</p>
-                
-            </div>
-            <div class="box">
-                <img src="advertisig-agency.png"alt="1">
-                <h3>SOCIAL MEDIA MARKETING</h3>
-                <p>Strategic approach to help you reach your ideal customers</p>
-                
-            </div>
-            <div class="box">
-                <img src="ui.png"alt="1">
-                <h3>UI/UX DESIGN</h3>
-                <p>Tailored desings to meet your brand's specific objectives</p>
-                
-            </div>
-            <div class="box">
-                <img src="search-engine-optimization.png"alt="1">
-                <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                <p>Data-driven strategies to boost your SEO</p>
-                
-            </div>
-            <div class="box">
-                <img src="video-editor.png"alt="1">
-                <h3>VIDEO EDITING & ANIMATION</h3>
-                <p>Immersive visuals to captivate your audience</p>
-                
-            </div>
-            <div class="box">
-                <img src="person.png"alt="1">
-                <h3>WEB PERSONIZATION</h3>
-                <p>Custom website interaction to meet individual need</p>
-                
-            </div>
+        <br>
+
+    </br>
+    <br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<div class="blue-div">
+    <div class="container">
+        <div class="box">
+            <img src="brand.png"alt="1">
+            <h3>BRANDING</h3>
+            <p>Design that communicate the brand's story</p>
+            
         </div>
-   
+        <div class="box">
+            <img src="advertisig-agency.png"alt="1">
+            <h3>SOCIAL MEDIA MARKETING</h3>
+            <p>Strategic approach to help you reach your ideal customers</p>
+            
+        </div>
+        <div class="box">
+            <img src="ui.png"alt="1">
+            <h3>UI/UX DESIGN</h3>
+            <p>Tailored desings to meet your brand's specific objectives</p>
+            
+        </div>
+        <div class="box">
+            <img src="search-engine-optimization.png"alt="1">
+            <h3>SEARCH ENGINE OPTIMIZATION</h3>
+            <p>Data-driven strategies to boost your SEO</p>
+            
+        </div>
+        <div class="box">
+            <img src="video-editor.png"alt="1">
+            <h3>VIDEO EDITING & ANIMATION</h3>
+            <p>Immersive visuals to captivate your audience</p>
+            
+        </div>
+        <div class="box">
+            <img src="person.png"alt="1">
+            <h3>WEB PERSONIZATION</h3>
+            <p>Custom website interaction to meet individual need</p>
+            
+        </div>
+    </div>
+
+</div>
+
+
 </div>
 
   
-    </div>
-    <div class="white-info">
-        <h2>READY TO SIP ON SUCCESS?</h2>
-        <p class="p1">We accept telepathy but a text would work better. Contact us now!</p>
 
-        <p><img src="phone-call.png" alt="Phone Icon"> +65 83000562 / +91 9769652708</p>
-        <p><img src="email.png" alt="Email Icon"> abdulhuseinjaibir@sociosip.com / lamiya@sociosip.com</p>
-        <p><img src="pin.png" alt="Address Icon"> Alexandra Rd, Singapore 159958</p>
-    </div>
     
 </body>
 </html>
