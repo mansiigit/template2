@@ -19,13 +19,6 @@
     background-color: white;
    
 }
-.white-div {
-    width: 100vw; /* Set width to 100% of viewport width */
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
-    box-sizing: border-box; /* Include padding and border in the total width */
-}
-
 @media screen and (max-width: 289px) {
     .white-div {
         width: 100%; 
@@ -98,7 +91,6 @@
     }
   
 }
-
 @media screen and (max-width: 289px) {
     .img img {
         margin-right: 0; 
@@ -111,7 +103,7 @@
     margin-left: -120px;
 } 
 .blue-div {
-    width: 100%;
+    width: 1600px; 
     height: 1100px; 
     background-color: #1e184d;
     position: relative;
@@ -121,12 +113,7 @@
     justify-content: center;
     align-items: flex-start; 
 }
-.blue-div {
-    width: 100vw; /* Set width to 100% of viewport width */
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
-    box-sizing: border-box; /* Include padding and border in the total width */
-}
+
 
 .blue-div::before {
     content: "SERVICES & BENEFITS";
@@ -205,13 +192,13 @@ font-size: 2rem;
 .box p {
     color: white; 
     font-size: 1.8rem;
-    line-height: 1.5; 
+    line-height: 1.5; /* Adjusted line height */
     white-space: pre-wrap; 
-    margin-top: 15px; 
+    margin-top: 15px; /* Adjusted margin value */
     text-align: center;
 }
 
-
+/* Additional styles for the last three boxes */
 .box:nth-last-child(-n+3) {
     margin-top: 10px; 
 }
@@ -221,15 +208,15 @@ font-size: 2rem;
     display: block; 
     width: 70px;
     border-bottom: 2px solid white; 
-    margin: 10px auto; 
+    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
 }
 
 .box:nth-last-child(-n+3) p {
     color: white; 
     font-size: 1.8rem;
-    line-height: 1.5; 
+    line-height: 1.5; /* Adjusted line height */
     white-space: pre-wrap; 
-    margin-top: 15px;
+    margin-top: 15px; /* Adjusted margin value */
     text-align: center;
 }
 
