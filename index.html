@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Full Page White Div with Icon (Responsive)</title>
 <style>
  body, html {
@@ -18,6 +19,13 @@
     background-color: white;
    
 }
+.white-div {
+    width: 100vw; /* Set width to 100% of viewport width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
 @media screen and (max-width: 289px) {
     .white-div {
         width: 100%; 
@@ -90,6 +98,7 @@
     }
   
 }
+
 @media screen and (max-width: 289px) {
     .img img {
         margin-right: 0; 
@@ -102,7 +111,7 @@
     margin-left: -120px;
 } 
 .blue-div {
-    width: 1450px; 
+    width: 100%;
     height: 1100px; 
     background-color: #1e184d;
     position: relative;
@@ -111,6 +120,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-start; 
+}
+.blue-div {
+    width: 100vw; /* Set width to 100% of viewport width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Include padding and border in the total width */
 }
 
 .blue-div::before {
@@ -190,31 +205,31 @@ font-size: 2rem;
 .box p {
     color: white; 
     font-size: 1.8rem;
-    line-height: 1.5; /* Adjusted line height */
+    line-height: 1.5; 
     white-space: pre-wrap; 
-    margin-top: 15px; /* Adjusted margin value */
+    margin-top: 15px; 
     text-align: center;
 }
 
-/* Additional styles for the last three boxes */
+
 .box:nth-last-child(-n+3) {
-    margin-top: 10px; /* Reduce the margin to bring the last three boxes closer vertically */
+    margin-top: 10px; 
 }
 
 .box:nth-last-child(-n+3) h3::after {
     content: ""; 
     display: block; 
-    width: 70px; /* Set a fixed width for the line */
+    width: 70px;
     border-bottom: 2px solid white; 
-    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
+    margin: 10px auto; 
 }
 
 .box:nth-last-child(-n+3) p {
     color: white; 
     font-size: 1.8rem;
-    line-height: 1.5; /* Adjusted line height */
+    line-height: 1.5; 
     white-space: pre-wrap; 
-    margin-top: 15px; /* Adjusted margin value */
+    margin-top: 15px;
     text-align: center;
 }
 
