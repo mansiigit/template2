@@ -19,7 +19,7 @@
     background-color: white;
    
 }
-@media screen and (max-width: 289px) {
+ @media screen and (max-width: 289px) {
     .white-div {
         width: 100%; 
     }
@@ -28,83 +28,155 @@
 .icon {
     margin-left: 50px;
     margin-top:  50px;
-    left: 5px;
-    width: 100px;
     
- 
+    width: 10%;
 }
-
+@media screen and (max-width: 868px){
+.icon{
+ margin-left: 20px;
+ margin-top: 20px;
+    margin-top:  50px;
+}
+}
+@media screen and (max-width: 650px){
+.icon{
+ margin-left: 20px;
+ margin-top: 20px;
+    margin-top:  40px;
+}
+}
 .text {
-
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 70px;
-    font-size:55px;
+    font-size: 4vw;
     line-height: 1.3;
-   
+}
+@media screen and (max-width: 868px) {
+    .text {
+        margin-left: 20px; 
+        white-space: nowrap;
+        margin-top: 42px;
+    }
 }
 @media screen and (max-width: 319px) {
     .text {
+        font-size: 10px;
         white-space: nowrap;
     }
 }
+
 @media screen and (max-width: 406px) {
     .text {
+        font-size: 14px; 
+        white-space: nowrap;
+
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .text {
+        margin-top: 30px;
+        
         white-space: nowrap;
     }
 }
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 305px) {
     .text {
-        white-space: nowrap;
+      
+        font-size: 9px ;
+      
     }
 }
 
 .description {
     font-family: 'Lexend', sans-serif;
-    position: absolute;
-    margin-top: 40px;
+ 
+    margin-top: 50px;
     margin-left: 70px;
-    font-size: 40px;
-    line-height: 1.5;
+    font-size: 2.3vw;
+    line-height: 1.38;
     text-align: justify;
 }
-@media screen and (max-width: 553px) {
-    .description{
-        white-space: nowrap;
-    }
-}
-@media screen and (max-width: 666px) {
-    .description{
-        white-space: nowrap;
-    }
-}
-.img img {
+@media screen and (max-width: 868px){
+.description{
+ margin-left: 20px;
+ margin-top: 10px;
+ margin-top:  50px;
  
-    height: 850px;
-    margin-left: 800px;
-    margin-top: -60px;
-  
-   
 }
-@media screen and (max-width: 328px) {
-    .img img{
-    height:850px ;
-    }
-  
 }
-@media screen and (max-width: 289px) {
+
+@media screen and (max-width: 747px){
+.description{
+ margin-top: 30px;
+ 
+}
+}
+
+@media screen and (max-width: 643px){
+.description{
+ margin-top: 20px;
+
+}
+}
+
+.img {
+    margin-top: -55vw; 
+    margin-left: 44%;
+    height: 57vw; 
+}
+
+.img img {
+    width: auto; 
+    height: 100%; 
+}
+
+@media screen and (max-width: 700px){
     .img img {
-        margin-right: 0; 
+        margin-top: -0.3vw; 
+    
+    }
+}
+@media screen and (max-width: 319px){
+    .img img {
+        margin-top: -1vw; 
+        height: 50vw; 
+        margin-left: 12%;
+    
+    }
+}
+@media screen and (max-width: 470px){
+    .img img {
+        margin-top: -0.2vw; 
+    
+    }
+}
+@media screen and (max-width: 560px){
+    .responsive-image{
+        margin-top: -1vw; 
+    
     }
 }
 .responsive-image {
-    width: 450px; 
-    height: auto;
-    margin-top: -160px;
-    margin-left: -120px;
-} 
+    margin-top: 30px;
+    width: 15%;
+
+  
+}
+@media screen and (max-width: 560px){
+    .responsive-image{
+        margin-top: 10px;
+    
+    }
+}
+
+
+
+
+
 .blue-div {
-    width: 1640px; 
-    height: 1100px; 
+    width: 100%; 
+  height: 80vw;
     background-color: #1e184d;
     position: relative;
     margin: 0; 
@@ -117,155 +189,135 @@
 
 .blue-div::before {
     content: "SERVICES & BENEFITS";
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: bold;
     position: absolute;
-    top: 60px; 
+   
     color: white;
+    margin-top: 4.5vw; 
+    text-align: center;
 }
 
 .blue-div::after {
     content: "To empower your brand and amplify your reach";
-    font-size: 1.6rem; /* Adjust the font size for the second line */
+    font-size: 1.8vw;
     color: rgb(168, 118, 118);
     position: absolute;
     white-space: nowrap;
-    top: 160px; /* Adjust the top position of the second line */
-    left: 50%; /* Position the second line in the center horizontally */
-    transform: translateX(-50%);
+    margin-top: 11vw; 
+    text-align: center;
+    align-content: center;
+   
 }
 
 @media screen and (max-width: 441px) {
     .blue-div::before{
-font-size:4.5rem;
-margin-top: 10px;
+        margin-top: 4.5vw; 
+    text-align: center;
     }
     .blue-div::after{
-font-size: 2rem;
+        position: absolute;
+    white-space: nowrap;
+    margin-top: 10vw; 
 }
 }
 
 .container {
-    margin-top: 170px; /* Adjust the margin-top value to move the container downwards */
+    position: relative; /* Set container position to relative */
+    width: 90vw; /* Adjust the width of the container */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* Adjust the gap between grid items */
-    padding: -20px;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Adjust columns dynamically */
+    gap: 8vw; /* Add gap between the boxes */
+    align-items: start; /* Align items at the start (top) of the container */
+    align-content: start; /* Align content at the start (top) of the container */
+    margin-left: 8vw; /* Adjust margin-left as needed */
+    top: 30%;
 }
 
-/* Styles for the first three boxes */
+
+
 .box {
     background-color: #1e184d;
-    padding: 30px; /* Reduce the padding to bring content closer */
+    padding: 2vw; /* Adjust padding as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 90px; /* Reduce the margin to bring boxes closer vertically */
-    width: 350px; /* Increase the width of the box */
-    height: 350px; /* Increase the height of the box */
+    width: 14vw; /* Adjust the width of each box */
+    height: 14vw; /* Adjust the height of each box */
+    margin-bottom: 1vh;
 }
 
 .box img {
-    width: 40%; 
-    height: 33%; 
-    display: block; 
-    margin-bottom: -5px;
+    width: 9vw; /* Adjust the width of the image inside the box */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-bottom: -0.5vw; /* Adjust margin as needed */
 }
 
 .box h3 {
-    color: #f05670; 
-    margin-bottom: 3px; /* Adjusted margin-bottom value */
-    display: inline-block; 
-    font-size: 1.4rem;
-    white-space: nowrap;
+    color: #f05670;
+    margin-bottom:-1vw; /* Adjust margin as needed to reduce the gap */
+    display: inline-block;
+    font-size: 1.5vw; /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .box h3::after {
-    content: ""; 
-    display: block; 
-    width: 70px; /* Set a fixed width for the line */
-    border-bottom: 2px solid white; 
-    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
+    content: "";
+    display: block;
+    width: 6vw; /* Adjust width as needed */
+    border-bottom: 0.2vw solid white; /* Adjust border thickness as needed */
+    margin: 1vw auto; /* Adjust margin as needed */
 }
 
 .box p {
-    color: white; 
-    font-size: 1.8rem;
-    line-height: 1.5; /* Adjusted line height */
-    white-space: pre-wrap; 
-    margin-top: 15px; /* Adjusted margin value */
+    color: white;
+    font-size: 1.5vw; /* Adjust font size as needed */
+    line-height: 1.5;
+    white-space: pre-wrap;
+    margin-top: 1vw; /* Adjust margin as needed */
     text-align: center;
 }
-
-/* Additional styles for the last three boxes */
-.box:nth-last-child(-n+3) {
-    margin-top: 10px; 
-}
-
-.box:nth-last-child(-n+3) h3::after {
-    content: ""; 
-    display: block; 
-    width: 70px;
-    border-bottom: 2px solid white; 
-    margin: 10px auto; /* Adjusted margin value to center the line horizontally */
-}
-
-.box:nth-last-child(-n+3) p {
-    color: white; 
-    font-size: 1.8rem;
-    line-height: 1.5; /* Adjusted line height */
-    white-space: pre-wrap; 
-    margin-top: 15px; /* Adjusted margin value */
-    text-align: center;
-}
-
-
-
 .white-info {
     background-color: white;
-    padding: 30px 10px; 
+    padding: 5vw; /* Adjust padding as needed */
+    margin-top: 0; /* Adjust margin as needed */
     text-align: left;
-    position: absolute;
-    top: 2120px;
-    width: 100%;
-    z-index: 2; 
-}
-
-.white-info p {
-    font-size: 1.5rem; 
-}
-
-.white-info p img {
-    width: 18px; 
-    height: auto; 
 }
 
 .white-info h2 {
-    font-size: 3rem;
-    color:#1e184d; 
+    color: #333; /* Adjust text color as needed */
+    font-size: 2.5vw; /* Adjust font size as needed */
+    margin-bottom: 2vw; /* Adjust margin as needed */
+    margin-left: 2.6vw; /* Add left margin */
 }
 
-
-
-.white-info .p1 {
-    color: #f05670; 
-    font: 2.2rem sans-serif;
-    font-family: 'Lexend Bold', sans-serif;
+.white-info p {
+    color:#1e184d; /* Adjust text color as needed */
+    font-size: 1.5vw; /* Adjust font size as needed */
+    margin-bottom: 1vw; /* Adjust margin as needed */
+    margin-left: 2.6vw; /* Add left margin */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
-.white-info h2,
-.white-info p,
-.white-info p1,
+.white-info p1 {
+    color:#f05670;/* Adjust text color as needed */
+    font-size: 2vw; /* Adjust font size as needed */
+    margin-bottom: 1vw; /* Adjust margin as needed */
+    margin-left: 2.6vw; /* Add left margin */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
 .white-info img {
-    margin-left: 17px; 
-    font-family: 'Lexend', sans-serif;
+    width: 1.5vw; /* Adjust icon size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1vw; /* Adjust margin as needed */
 }
-
 
 
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap"> <!-- Load Lexend font with different weights -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap">
 </head>
 <body>
     <div class="white-div">
@@ -275,7 +327,7 @@ font-size: 2rem;
     <span style="font-family: 'Lexend', sans-serif; font-weight: bold;">SOCIOSIP !</span>
 </div>
 
-        <div class="description">
+     <div class="description">
             Your one-stop shop for all things <br>
             brand and digital! We don't just<br>
             sip the tea; we stir the social<br>
@@ -287,10 +339,10 @@ font-size: 2rem;
             comprehensive services below<br>
             and let's start brewing <br>
             something remarkable together.
-            <br>
+             <br>
             <a href="https://www.sociosip.com">
-                <img src="get started.png" alt="Additional Image" class="responsive-image">
-            </a>
+                <img src="get started-cropped.svg" alt="Additional Image" class="responsive-image">
+            </a> 
         </div>
         
         <div class="img">
@@ -298,17 +350,8 @@ font-size: 2rem;
         </div>
         <br>
 
-    </br>
-    <br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
+   
+
 <div class="blue-div">
     <div class="container">
         <div class="box">
@@ -346,15 +389,21 @@ font-size: 2rem;
             <h3>WEB PERSONIZATION</h3>
             <p>Custom website interaction to meet individual need</p>
             
-        </div>
+        </div> 
     </div>
 
 </div>
 
-
 </div>
+<div class="white-info">
+     <h2>READY TO SIP ON SUCCESS?</h2>
+    <p1>We accept telepathy but a text would work better. Contact us now!</p1>
+    <p><img src="phone-call.png" alt="Phone Icon"> +65 83000562 / +91 9769652708</p>
+    <p><img src="email.png" alt="Email Icon"> abdulhuseinjaibir@sociosip.com / lamiya@sociosip.com</p>
+    <p><img src="pin.png" alt="Address Icon"> Alexandra Rd, Singapore 159958</p> 
+</div> 
 
-  
+   
 
     
 </body>
