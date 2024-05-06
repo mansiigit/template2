@@ -223,105 +223,106 @@
 }
 
 .container {
-    position: relative; /* Set container position to relative */
-    width: 90vw; /* Adjust the width of the container */
+    position: relative;
+    width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr)); /* Adjust columns dynamically */
-    gap: 8vw; /* Add gap between the boxes */
-    align-items: start; /* Align items at the start (top) of the container */
-    align-content: start; /* Align content at the start (top) of the container */
-    margin-left: 8vw; /* Adjust margin-left as needed */
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 8vw;
+    align-items: start;
+    align-content: start;
+    margin-left: 8vw;
     top: 30%;
 }
 
-
-
 .box {
     background-color: #1e184d;
-    padding: 2vw; /* Adjust padding as needed */
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 14vw; /* Adjust the width of each box */
-    height: 14vw; /* Adjust the height of each box */
+    width: 14vw;
+    height: 14vw;
     margin-bottom: 1vh;
 }
 
 .box img {
-    width: 9vw; /* Adjust the width of the image inside the box */
-    height: auto; /* Maintain aspect ratio */
+    width: 9vw;
+    height: auto;
     display: block;
-    margin-bottom: -0.5vw; /* Adjust margin as needed */
+    margin-bottom: -0.5vw;
 }
 
 .box h3 {
     color:#ea5569;
-    margin-bottom:-1vw; /* Adjust margin as needed to reduce the gap */
+    margin-bottom:-1vw;
     display: inline-block;
-    font-size: 1.5vw; /* Adjust font size as needed */
-    white-space: nowrap; /* Prevent wrapping */
+    font-size: 1.5vw;
+    white-space: nowrap;
 }
 
 .box h3::after {
     content: "";
     display: block;
-    width: 6vw; /* Adjust width as needed */
-    border-bottom: 0.2vw solid white; /* Adjust border thickness as needed */
-    margin: 1vw auto; /* Adjust margin as needed */
+    width: 6vw;
+    border-bottom: 0.2vw solid white;
+    margin: 1vw auto;
 }
 
 .box p {
     color: white;
-    font-size: 1.5vw; /* Adjust font size as needed */
+    font-size: 1.5vw;
     line-height: 1.5;
     white-space: pre-wrap;
-    margin-top: 1vw; /* Adjust margin as needed */
+    margin-top: 1vw;
     text-align: center;
 }
+
 .white-info {
     background-color: white;
-    padding: 5vw; /* Adjust padding as needed */
-    margin-top: 0; /* Adjust margin as needed */
+    padding: 5vw;
+    margin-top: 0;
     text-align: left;
 }
 
 .white-info h2 {
-    color: #333; /* Adjust text color as needed */
-    font-size: 2.5vw; /* Adjust font size as needed */
-    margin-bottom: 2vw; /* Adjust margin as needed */
-    margin-left: 2.6vw; /* Add left margin */
+    color: #333;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    margin-left: 2.6vw;
 }
 
 .white-info p {
-    color:#1e184d; /* Adjust text color as needed */
-    font-size: 1.5vw; /* Adjust font size as needed */
-    margin-bottom: 1vw; /* Adjust margin as needed */
-    margin-left: 2.6vw; /* Add left margin */
-    white-space: nowrap; /* Prevent text wrapping */
+    color:#1e184d;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-left: 2.6vw;
+    white-space: nowrap;
 }
 
 .white-info p1 {
-    color:#ea5569;/* Adjust text color as needed */
-    font-size: 2vw; /* Adjust font size as needed */
-    margin-bottom: 1vw; /* Adjust margin as needed */
-    margin-left: 2.6vw; /* Add left margin */
-    white-space: nowrap; /* Prevent text wrapping */
+    color:#ea5569;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 2.6vw;
+    white-space: nowrap;
 }
 
 .white-info img {
-    width: 1.5vw; /* Adjust icon size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1vw; /* Adjust margin as needed */
+    width: 1.5vw; 
+    height: auto;
+    margin-right: 1vw; 
 }
-
-
+     
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap">
 </head>
 <body>
     <div class="white-div">
-        <img class="icon" src="logo.png" alt="Icon">
+        <a href="https://www.sociosip.com">
+            <img class="icon" src="logo.png" alt="Icon">
+        </a>
+        
         <div class="text">
     <span>WELCOME TO</span><br> 
     <span style="font-family: 'Lexend', sans-serif; font-weight: bold;">SOCIOSIP !</span>
@@ -399,9 +400,24 @@
      <h2>READY TO SIP ON SUCCESS?</h2>
     <p1>We accept telepathy but a text would work better. Contact us now!</p1>
     <p><img src="phone-call.png" alt="Phone Icon"> +65 83000562 / +91 9769652708</p>
-    <p><img src="email.png" alt="Email Icon"> abdulhuseinjaber@sociosip.com / lamiya@sociosip.com</p>
+    <p>
+        <img src="email.png" alt="Email Icon"> 
+        <a href="mailto:abdulhuseinjabir@sociosip.com?cc=&bcc=&subject=&body=" style="text-decoration: none; color: inherit;">abdulhuseinjabir@sociosip.com</a> / 
+        <a href="mailto:lamiya@sociosip.com?cc=&bcc=&subject=&body=" style="text-decoration: none; color: inherit;">lamiya@sociosip.com</a>
+    </p>
+    
     <p><img src="pin.png" alt="Address Icon"> Alexandra Rd, Singapore 159958</p> 
 </div> 
+<div style="text-align: center; margin-top: -2vh;">
+    <a href="https://www.linkedin.com/company/sociosip/" style="display: inline-block; margin-right: 2vw;"><img src="linkedin.svg" alt="Linkedin Icon" style="width: 4vw; height: 4vw;"></a>
+    <a href="https://www.facebook.com/share/savzBK8AgNp2zHuN/?mibextid=qi2Omg" style="display: inline-block; margin-right: 2vw;"><img src="facebook.svg" alt="Facebook Icon" style="width: 4vw; height: 4vw;"></a>
+    <a href="https://www.instagram.com/sociosip_official?igsh=NmcyYnZ6azlreDZ1&utm_source=qr" style="display: inline-block;"><img src="Instagram.svg" alt="Instagram Icon" style="width: 4vw; height: 4vw;"></a>
+</div>
+
+
+
+
+
 
    
 
