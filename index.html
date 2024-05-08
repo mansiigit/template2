@@ -3,339 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 <title>Full Page White Div with Icon (Responsive)</title>
-<style>
- body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Lexend', sans-serif; /
-}
 
-.white-div {
-    width: 100%;
-    min-height: calc(40vh + 40px); 
-    background-color: white;
-   
-}
- @media screen and (max-width: 289px) {
-    .white-div {
-        width: 100%; 
-    }
-}
-
-.icon {
-    margin-left: 50px;
-    margin-top:  50px;
-    
-    width: 10%;
-}
-@media screen and (max-width: 868px){
-.icon{
- margin-left: 20px;
- margin-top: 20px;
-    margin-top:  50px;
-}
-}
-@media screen and (max-width: 650px){
-.icon{
- margin-left: 20px;
- margin-top: 20px;
-    margin-top:  40px;
-}
-}
-.text {
-    margin-top: 80px;
-    margin-left: 70px;
-    font-size: 4vw;
-    line-height: 1.3;
-}
-@media screen and (max-width: 868px) {
-    .text {
-        margin-left: 20px; 
-        white-space: nowrap;
-        margin-top: 42px;
-    }
-}
-@media screen and (max-width: 319px) {
-    .text {
-        font-size: 10px;
-        white-space: nowrap;
-    }
-}
-
-@media screen and (max-width: 406px) {
-    .text {
-        font-size: 14px; 
-        white-space: nowrap;
-
-    }
-}
-
-@media screen and (max-width: 441px) {
-    .text {
-        margin-top: 30px;
-        
-        white-space: nowrap;
-    }
-}
-@media screen and (max-width: 305px) {
-    .text {
-      
-        font-size: 9px ;
-      
-    }
-}
-
-.description {
-    font-family: 'Lexend', sans-serif;
- 
-    margin-top: 50px;
-    margin-left: 70px;
-    font-size: 2.3vw;
-    line-height: 1.38;
-    text-align: justify;
-}
-@media screen and (max-width: 868px){
-.description{
- margin-left: 20px;
- margin-top: 10px;
- margin-top:  50px;
- 
-}
-}
-
-@media screen and (max-width: 747px){
-.description{
- margin-top: 30px;
- 
-}
-}
-
-@media screen and (max-width: 643px){
-.description{
- margin-top: 20px;
-
-}
-}
-
-.img {
-    margin-top: -55vw; 
-    margin-left: 44%;
-    height: 57vw; 
-}
-
-.img img {
-    width: auto; 
-    height: 100%; 
-}
-
-@media screen and (max-width: 700px){
-    .img img {
-        margin-top: -0.3vw; 
-    
-    }
-}
-@media screen and (max-width: 319px){
-    .img img {
-        margin-top: -1vw; 
-        height: 50vw; 
-        margin-left: 12%;
-    
-    }
-}
-@media screen and (max-width: 470px){
-    .img img {
-        margin-top: -0.2vw; 
-    
-    }
-}
-@media screen and (max-width: 560px){
-    .responsive-image{
-        margin-top: -1vw; 
-    
-    }
-}
-.responsive-image {
-    margin-top: 30px;
-    width: 15%;
-
-  
-}
-@media screen and (max-width: 560px){
-    .responsive-image{
-        margin-top: 10px;
-    
-    }
-}
-
-
-
-
-
-.blue-div {
-    width: 100%; 
-  height: 80vw;
-    background-color: #1e184d;
-    position: relative;
-    margin: 0; 
-    padding: 0; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-}
-
-
-.blue-div::before {
-    content: "SERVICES & BENEFITS";
-    font-size: 4vw;
-    font-weight: bold;
-    position: absolute;
-   
-    color: white;
-    margin-top: 4.5vw; 
-    text-align: center;
-}
-
-.blue-div::after {
-    content: "To empower your brand and amplify your reach";
-    font-size: 1.8vw;
-    color:#ea5569;
-    position: absolute;
-    white-space: nowrap;
-    margin-top: 11vw; 
-    text-align: center;
-    align-content: center;
-   
-}
-
-@media screen and (max-width: 441px) {
-    .blue-div::before{
-        margin-top: 4.5vw; 
-    text-align: center;
-    }
-    .blue-div::after{
-        position: absolute;
-    white-space: nowrap;
-    margin-top: 10vw; 
-}
-}
-
-.container {
-    position: relative;
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 8vw;
-    align-items: start;
-    align-content: start;
-    margin-left: 8vw;
-    top: 30%;
-}
-
-.box {
-    background-color: #1e184d;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 14vw;
-    height: 14vw;
-    margin-bottom: 1vh;
-}
-
-.box img {
-    width: 9vw;
-    height: auto;
-    display: block;
-    margin-bottom: -0.5vw;
-}
-
-.box h3 {
-    color:#ea5569;
-    margin-bottom:-1vw;
-    display: inline-block;
-    font-size: 1.5vw;
-    white-space: nowrap;
-}
-
-.box h3::after {
-    content: "";
-    display: block;
-    width: 6vw;
-    border-bottom: 0.2vw solid white;
-    margin: 1vw auto;
-}
-
-.box p {
-    color: white;
-    font-size: 1.5vw;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    margin-top: 1vw;
-    text-align: center;
-}
-.white-info {
-    background-color: white;
-    padding: 2vw; 
-    margin-top: 0;
-    text-align: left;
-}
-
-.white-info h2 {
-    color: #333;
-    font-size: 2.5vw;
-    margin-bottom: 0.5vw; 
-    margin-left: 5vw;
-}
-
-.white-info p1 {
-    color: #ea5569;
-    font-size: 2vw;
-    margin-bottom: 2vw; 
-    margin-left: 5vw;
- 
-}
-
-.white-info p {
-    color: #1e184d;
-    font-size: 1.5vw;
-    margin-bottom: 0.3vw; 
-    margin-left: 3vw;
-    margin-bottom: -3.6vw;
-}
-
-.white-info img {
-    width: 6vw; 
-    height: auto;
-    margin-right: 1vw;
-}
-
-
-
-
-.phone-number {
-        color: black; 
-        text-decoration: none; 
-    }
-    
-</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap">
 </head>
-<body>
-    <div class="white-div">
-        <a href="https://www.sociosip.com">
-            <img class="icon" src="logo.png" alt="Icon">
-        </a>
-        
-        <div class="text">
-    <span>WELCOME TO</span><br> 
-    <span style="font-family: 'Lexend', sans-serif; font-weight: bold;">SOCIOSIP !</span>
-</div>
 
-     <div class="description">
+<body style="margin: 0; padding: 0; height: 100%; font-family: 'Lexend', sans-serif;">
+
+    <div class="white-div" style="width: 100%; min-height: calc(40vh + 40px); background-color: white;">
+        <a href="https://www.sociosip.com" style="display: block; margin-left: 4%; margin-top: 5vw;">
+    <img class="icon" src="logo.png" alt="Icon" style="width: 10%;">
+</a>
+
+
+    
+        <div class="text" style="margin-top: 8vw; margin-left: -3%; padding-left: 10%; font-size: 4vw; line-height: 1.3;">
+            <span style="font-weight: bold;">WELCOME TO</span><br> 
+            <span style="font-weight: bold;">SOCIOSIP!</span>
+        </div>
+    
+        <div class="description" style="font-size: 2.3vw; margin-top: 10vw; margin-left: 5%; line-height: 1.5; text-align: justify;">
             Your one-stop shop for all things <br>
             brand and digital! We don't just<br>
             sip the tea; we stir the social<br>
@@ -347,85 +34,84 @@
             comprehensive services below<br>
             and let's start brewing <br>
             something remarkable together.
-             <br>
-            <a href="https://www.sociosip.com">
-                <img src="get started-cropped.svg" alt="Additional Image" class="responsive-image">
-            </a> 
+            <br>
+            <a href="https://www.sociosip.com" style="display: block; margin-top: 6vw; width: 20%; ">
+                <img src="get started-cropped.svg" alt="Additional Image" class="responsive-image" style="margin-top: 30px; width: 85%;">
+            </a>
+        </div>
+    
+      <div class="img" style="margin-top: -64vw; margin-left: 44%; height: 55vw; position: absolute;">
+    <img src="marketing element-cropped.svg" alt="Additional Image" style="width: auto; height: 100%;">
+</div>
+
+
+
+    </div>
+<br>
+<div class="blue-div" style="width: 100%; height: 80vw; background-color: #1e184d; position: relative; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start;">
+    <div class="blue-div-before" style="content: 'SERVICES & BENEFITS'; font-size: 4vw; font-weight: bold; position: absolute; color: white; margin-top: 4.5vw; text-align: center;">SERVICES & BENEFITS</div>
+    <div class="blue-div-after" style="content: 'To empower your brand and amplify your reach'; font-size: 1.8vw; color:#ea5569; position: absolute; white-space: nowrap; margin-top: 11vw; text-align: center; align-content: center;">To empower your brand and amplify your reach</div>
+
+    <div class="container" style="position: relative; width: 90vw; display: grid; grid-template-columns: repeat(auto-fill, minmax(20vw, 3fr)); gap: 8vw; align-items: start; align-content: start; margin-left: 8vw; top: 30%;">
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="brand.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">BRANDING</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Design that communicates the brand's story</p>
         </div>
         
-        <div class="img">
-            <img src="marketing element-cropped.svg" alt="Additional Image">
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="advertisig-agency.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">SOCIAL MEDIA MARKETING</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Strategic approach to help you reach your ideal customers</p>
         </div>
-        <br>
+        
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="ui.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">UI/UX DESIGN</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Tailored designs to meet your brand's specific objectives</p>
+        </div>
+        
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="search-engine-optimization.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">SEARCH ENGINE OPTIMIZATION</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Data-driven strategies to boost your SEO</p>
+        </div>
+        
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="video-editor.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">VIDEO EDITING & ANIMATION</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Immersive visuals to captivate your audience</p>
+        </div>
+        
+        <div class="box" style="background-color: #1e184d; padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 14vw; height: 14vw; margin-bottom: 1vh;">
+            <img src="person.png" alt="1" style="width: 9vw; height: auto; display: block; margin-bottom: -0.5vw;">
+            <h3 style="color: #ea5569; font-size: 1.5vw; white-space: nowrap;">WEB PERSONIZATION</h3>
+            <p style="color: white; font-size: 1.5vw; line-height: 1.5; white-space: pre-wrap; margin-top: 1vw; text-align: center;">Custom website interaction to meet individual needs</p>
+        </div>
+   </div>
+        </div>
+        
 
-   
+<div class="white-info" style="background-color: white; padding: 2vw; margin-top: 0; text-align: left;">
+    <h2 style="color: #333; font-size: 2.5vw; margin-bottom: 0.5vw; margin-left: 5vw;">READY TO SIP ON SUCCESS?</h2>
+    <p style="color: #ea5569; font-size: 2vw; margin-bottom: 2vw; margin-left: 5vw;">We accept telepathy but a text would work better. Contact us now!</p>
 
-<div class="blue-div">
-    <div class="container">
-        <div class="box">
-            <img src="brand.png"alt="1">
-            <h3>BRANDING</h3>
-            <p>Design that communicate the brand's story</p>
-            
-        </div>
-        <div class="box">
-            <img src="advertisig-agency.png"alt="1">
-            <h3>SOCIAL MEDIA MARKETING</h3>
-            <p>Strategic approach to help you reach your ideal customers</p>
-            
-        </div>
-        <div class="box">
-            <img src="ui.png"alt="1">
-            <h3>UI/UX DESIGN</h3>
-            <p>Tailored desings to meet your brand's specific objectives</p>
-            
-        </div>
-        <div class="box">
-            <img src="search-engine-optimization.png"alt="1">
-            <h3>SEARCH ENGINE OPTIMIZATION</h3>
-            <p>Data-driven strategies to boost your SEO</p>
-            
-        </div>
-        <div class="box">
-            <img src="video-editor.png"alt="1">
-            <h3>VIDEO EDITING & ANIMATION</h3>
-            <p>Immersive visuals to captivate your audience</p>
-            
-        </div>
-        <div class="box">
-            <img src="person.png"alt="1">
-            <h3>WEB PERSONIZATION</h3>
-            <p>Custom website interaction to meet individual need</p>
-            
-        </div> 
-    </div>
-
-</div>
-
-</div>
-<div class="white-info">
-    <h2>READY TO SIP ON SUCCESS?</h2>
-    <p1>We accept telepathy but a text would work better. Contact us now!</p1>
-  <p>
-    <img src="call icon.svg" alt="Phone Icon" style="display: inline-block; vertical-align: middle;"> 
-    <span style="display: inline-block; vertical-align: middle; color: black; text-decoration: none;">+65 83000562 / +91 9769652708</span>
-</p>
-
+    <p style="color: #1e184d; font-size: 1.5vw; margin-bottom: 0.3vw; margin-left: 3vw; margin-bottom: -3.6vw;">
+        <img src="call icon.svg" alt="Phone Icon" style="width: 6vw; height: auto; margin-right: 1vw; display: inline-block; vertical-align: middle;"> 
+        <span style="display: inline-block; vertical-align: middle; color: black; text-decoration: none;">+65 83000562 / +91 9769652708</span>
+    </p>
     
-    <p>
-        <img src="mail icon.svg" alt="Email Icon" style="display: inline-block; vertical-align: middle;"> 
+    <p style="color: #1e184d; font-size: 1.5vw; margin-bottom: 0.3vw; margin-left: 3vw; margin-bottom: -3.6vw;">
+        <img src="mail icon.svg" alt="Email Icon" style="width: 6vw; height: auto; margin-right: 1vw; display: inline-block; vertical-align: middle;"> 
         <a href="mailto:abdulhuseinjabir@sociosip.com?cc=&bcc=&subject=&body=" style="text-decoration: none; color: black;">abdulhuseinjabir@sociosip.com</a> / 
         <a href="mailto:lamiya@sociosip.com?cc=&bcc=&subject=&body=" style="text-decoration: none; color: black;">lamiya@sociosip.com</a>
     </p>
     
-    <p>
-        <img src="address icon.svg" alt="Address Icon" style="display: inline-block; vertical-align: middle;"> 
+    <p style="color: #1e184d; font-size: 1.5vw; margin-bottom: 0.3vw; margin-left: 3vw; margin-bottom: -3.6vw;">
+        <img src="address icon.svg" alt="Address Icon" style="width: 6vw; height: auto; margin-right: 1vw; display: inline-block; vertical-align: middle;"> 
         <span style="display: inline-block; vertical-align: middle; color: black;">Alexandra Rd, Singapore 159958</span>
     </p>
-    
 </div>
-
-
 
 <div style="text-align: center; margin-top: 4vh;">
     <a href="https://www.linkedin.com/company/sociosip/" style="display: inline-block; margin-right: 2vw;"><img src="linkedin icon.svg" alt="Linkedin Icon" style="width: 6vw; height: 6vw;"></a>
@@ -433,13 +119,5 @@
     <a href="https://www.instagram.com/sociosip_official?igsh=NmcyYnZ6azlreDZ1&utm_source=qr" style="display: inline-block;"><img src="Instagram icon.svg" alt="Instagram Icon" style="width: 6vw; height: 6vw;"></a>
 </div>
 
-
-
-
-
-
-   
-
-    
 </body>
 </html>
